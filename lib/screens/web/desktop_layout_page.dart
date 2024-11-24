@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-    
-class DesktopLayoutPage extends StatefulWidget {
+import 'package:protoflio/constants/colors.dart';
+import 'package:protoflio/constants/styles.dart';
 
-  const DesktopLayoutPage({ Key? key }) : super(key: key);
+class DesktopLayoutPage extends StatefulWidget {
+  const DesktopLayoutPage({Key? key}) : super(key: key);
 
   @override
   State<DesktopLayoutPage> createState() => _DesktopLayoutPageState();
@@ -11,12 +12,32 @@ class DesktopLayoutPage extends StatefulWidget {
 class _DesktopLayoutPageState extends State<DesktopLayoutPage> {
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.red,
-      appBar: AppBar(
-        title: const Text(''),
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        decoration: Styles.gradientDecoration,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          
+                        ],
+                      )
+                    ],
+                  )
+                ],
+              )
+            ],
+          ),
+        ),
       ),
-      body: Container(),
     );
   }
 }
