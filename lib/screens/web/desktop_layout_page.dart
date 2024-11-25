@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:protoflio/constants/colors.dart';
 import 'package:protoflio/constants/styles.dart';
 
+import '../widgets/header_text_widget.dart';
+
 class DesktopLayoutPage extends StatefulWidget {
   const DesktopLayoutPage({Key? key}) : super(key: key);
 
@@ -27,7 +29,7 @@ class _DesktopLayoutPageState extends State<DesktopLayoutPage> {
                     children: [
                       Row(
                         children: [
-                          
+                          HeaderTextWidget(size: size,),
                         ],
                       )
                     ],
